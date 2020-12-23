@@ -117,7 +117,7 @@ class Inicio extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(15)),
                         gradient: new LinearGradient(
                             colors: [
-                              const Color(0xFF6FDB44),
+                              const Color(0xFF358814),
                               const Color(0xFF1BD854),
                             ],
                             begin: const FractionalOffset(0.0, 0.0),
@@ -127,13 +127,17 @@ class Inicio extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Text(
-                            'Recibos Pendientes',
-                            style: GoogleFonts.lato(
-                              textStyle: TextStyle(
-                                  fontSize: responsive.ip(2),
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: responsive.wp(5)),
+                            width: responsive.wp(65),
+                            child: Text(
+                              'Felicitaciones , estas al día en tus pagos!',
+                              style: GoogleFonts.lato(
+                                textStyle: TextStyle(
+                                    fontSize: responsive.ip(2),
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),Container(
                             width: responsive.wp(30),
