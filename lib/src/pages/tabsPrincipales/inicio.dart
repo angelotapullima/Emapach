@@ -97,14 +97,17 @@ class Inicio extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
-                  ,   SizedBox(
+                    ),
+                    SizedBox(
                       height: responsive.hp(.5),
-                    ),Container(
+                    ),
+                    Container(
                       height: responsive.hp(15),
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(15),
+                        ),
                         gradient: new LinearGradient(
                             colors: [
                               const Color(0xFFE994DB),
@@ -139,7 +142,8 @@ class Inicio extends StatelessWidget {
                                   -responsive.wp(1.5), 0, 0),
                               height: responsive.hp(13),
                               width: responsive.wp(9),
-                              child: Lottie.asset('assets/lottie/reclamos.json'),
+                              child:
+                                  Lottie.asset('assets/lottie/reclamos.json'),
                             ),
                           )
                         ],
